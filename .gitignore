@@ -1,1 +1,4 @@
 *.log
+# local screenshots
+*.png
+!og-image.png
