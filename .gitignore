@@ -1,4 +1,5 @@
 *.log
+server.log
 # local screenshots
 *.png
 !og-image.png
