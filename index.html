@@ -5,47 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pergola Labs | Data Engineering for Climate Tech</title>
   <meta name="description" content="Pergola Labs is a data engineering consultancy for climate tech: carbon accounting, ESG data, carbon removal, and industrial sensor data.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231f5d43'/%3E%3Ctext x='50' y='72' font-family='Georgia,serif' font-size='62' font-style='italic' fill='white' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pergola Labs | Data Engineering for Climate Tech">
+  <meta property="og:description" content="Reliable data for a measurable climate transition. Carbon accounting, ESG pipelines, and open climate datasets.">
+  <meta property="og:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site">
     <div class="wrap">
-      <span class="brand">PERGOLA LABS</span>
-      <nav>
+      <a class="brand" href="#"><span class="mark" aria-hidden="true">P</span>Pergola Labs</a>
+      <nav aria-label="Main">
         <a href="#services">Services</a>
         <a href="#expertise">Expertise</a>
         <a href="#stack">Tech stack</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="hero">
       <div class="wrap">
-        <h1>Data engineering for climate tech</h1>
-        <p>Pergola Labs builds reliable data foundations for companies measuring, reporting and reducing their climate impact, from carbon accounting and ESG data to carbon removal and industrial sensor data.</p>
-        <a class="btn" href="#contact">Work with us</a>
-        <a class="btn alt" href="#projects">See projects</a>
+        <span class="eyebrow">Data engineering consultancy</span>
+        <h1>Reliable data for a <em>measurable</em> climate transition</h1>
+        <p class="lede">Pergola Labs builds the data foundations behind companies that measure, report and reduce their climate impact &mdash; from carbon accounting and ESG data to carbon removal and industrial sensors.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Work with us</a>
+          <a class="btn alt" href="#projects">See our work</a>
+        </div>
+        <div class="hero-proof" aria-label="Focus areas">
+          <span>Carbon accounting</span>
+          <span>ESG &amp; disclosure data</span>
+          <span>Carbon removal registries</span>
+          <span>Industrial sensor pipelines</span>
+        </div>
       </div>
     </div>
 
     <section id="services">
       <div class="wrap">
-        <h2>What we do</h2>
+        <div class="section-head">
+          <h2>What we do</h2>
+          <p>Three ways we help climate teams turn raw data into decisions they can defend.</p>
+        </div>
         <div class="grid">
           <div class="card">
+            <span class="card-num">01</span>
             <h3>Data pipelines &amp; orchestration</h3>
-            <p>Design and build maintainable, testable pipelines with Python, SQL and Dagster.</p>
+            <p>Maintainable, tested pipelines built with Python, SQL and Dagster &mdash; observable from source to dashboard.</p>
           </div>
           <div class="card">
+            <span class="card-num">02</span>
             <h3>Analytics data platforms</h3>
-            <p>Warehouse and lakehouse modeling on BigQuery, PostgreSQL and DuckDB, with an eye on DuckLake.</p>
+            <p>Warehouse and lakehouse modeling on BigQuery, PostgreSQL and DuckDB, with an eye on emerging formats like DuckLake.</p>
           </div>
           <div class="card">
+            <span class="card-num">03</span>
             <h3>Agentic coding setup</h3>
-            <p>Set up agentic coding workflows so data teams ship faster with guardrails.</p>
+            <p>Workflow and guardrails that let data teams ship faster with AI coding agents &mdash; without losing review discipline.</p>
           </div>
         </div>
       </div>
@@ -53,20 +76,41 @@
 
     <section id="expertise">
       <div class="wrap">
-        <h2>Domain expertise</h2>
-        <ul class="tags">
-          <li>Carbon accounting</li>
-          <li>ESG data</li>
-          <li>Carbon removal</li>
-          <li>Industrial sensor data</li>
-          <li>Operational data</li>
+        <div class="section-head">
+          <h2>Domain expertise</h2>
+          <p>We already speak the language of carbon &mdash; scopes, methodologies, registries and assurance.</p>
+        </div>
+        <ul class="expertise-list">
+          <li>
+            <span class="term">Carbon accounting</span>
+            <p class="desc">Scope 1/2/3 inventories, emission factors, and audit-ready calculation lineage.</p>
+          </li>
+          <li>
+            <span class="term">ESG data</span>
+            <p class="desc">Disclosure-ready datasets aligned to reporting frameworks and assurance workflows.</p>
+          </li>
+          <li>
+            <span class="term">Carbon removal</span>
+            <p class="desc">Pipelines for registry-grade quantification, documentation and lifecycle data.</p>
+          </li>
+          <li>
+            <span class="term">Industrial sensor data</span>
+            <p class="desc">Time-series ingestion and validation from meters, PLCs and field equipment.</p>
+          </li>
+          <li>
+            <span class="term">Operational data</span>
+            <p class="desc">Unifying ERP, CRM and spreadsheet sources into one trusted layer.</p>
+          </li>
         </ul>
       </div>
     </section>
 
     <section id="stack">
       <div class="wrap">
-        <h2>Technical stack</h2>
+        <div class="section-head">
+          <h2>Technical stack</h2>
+          <p>Boring, proven tools &mdash; plus a watchlist of what's next.</p>
+        </div>
         <ul class="tags">
           <li>Python</li>
           <li>SQL</li>
@@ -74,7 +118,7 @@
           <li>BigQuery</li>
           <li>PostgreSQL</li>
           <li>DuckDB</li>
-          <li>DuckLake (exploring)</li>
+          <li class="muted">DuckLake &middot; exploring</li>
           <li>Agentic coding</li>
         </ul>
       </div>
@@ -82,37 +126,50 @@
 
     <section id="projects">
       <div class="wrap">
-        <h2>Selected work on GitHub</h2>
-        <div class="grid">
-          <div class="card">
-            <h3><a href="https://github.com/mirthbottle/ghg">ghg</a></h3>
-            <p>Greenhouse gas footprint analysis.</p>
-          </div>
-          <div class="card">
-            <h3><a href="https://github.com/mirthbottle/cleanweb_taxonomy">cleanweb_taxonomy</a></h3>
-            <p>A taxonomy of the clean web community, in Python.</p>
-          </div>
-          <div class="card">
-            <h3><a href="https://github.com/mirthbottle/trader_buddy">trader_buddy</a></h3>
-            <p>Tools for personal trading, built in Jupyter notebooks.</p>
-          </div>
+        <div class="section-head">
+          <h2>Selected work on GitHub</h2>
+          <p>Open-source tools from our day-to-day practice.</p>
         </div>
-        <p><a href="https://github.com/mirthbottle">More on GitHub &rarr;</a></p>
+        <div class="grid">
+          <a class="card project-card" href="https://github.com/mirthbottle/ghg">
+            <h3><span class="repo-name">ghg</span><span class="arrow" aria-hidden="true">&nearr;</span></h3>
+            <p>Greenhouse gas footprint analysis in Python &mdash; emission factors and scope calculations you can inspect.</p>
+          </a>
+          <a class="card project-card" href="https://github.com/mirthbottle/cleanweb_taxonomy">
+            <h3><span class="repo-name">cleanweb_taxonomy</span><span class="arrow" aria-hidden="true">&nearr;</span></h3>
+            <p>A structured taxonomy of the clean web community, maintained as a Python package.</p>
+          </a>
+          <a class="card project-card" href="https://github.com/mirthbottle/trader_buddy">
+            <h3><span class="repo-name">trader_buddy</span><span class="arrow" aria-hidden="true">&nearr;</span></h3>
+            <p>Personal trading tools built in Jupyter notebooks &mdash; notebook-first analytics in practice.</p>
+          </a>
+        </div>
+        <p><a class="more-link" href="https://github.com/mirthbottle">More on GitHub &rarr;</a></p>
       </div>
     </section>
 
     <section id="contact">
       <div class="wrap">
-        <h2>Get in touch</h2>
-        <p>Building climate data infrastructure? Let's talk.</p>
-        <a class="btn" href="https://www.linkedin.com/in/yangruanesg/">Connect on LinkedIn</a>
-        <a class="btn" href="https://github.com/mirthbottle">GitHub</a>
+        <div class="contact-band">
+          <h2>Building climate data infrastructure?</h2>
+          <p>Tell us about your pipeline, warehouse or reporting problem. We'll bring the boring, reliable solutions.</p>
+          <a class="btn" href="mailto:hello@pergola.dev">Email us</a>
+          <a class="btn alt" href="https://www.linkedin.com/in/yangruanesg/" rel="me">LinkedIn</a>
+          <p class="contact-links">or browse the code at <a href="https://github.com/mirthbottle">github.com/mirthbottle</a></p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">&copy; 2026 Pergola Labs</div>
+    <div class="wrap">
+      <span>&copy; 2026 Pergola Labs</span>
+      <span>
+        <a href="https://github.com/mirthbottle">GitHub</a>
+        <a href="https://www.linkedin.com/in/yangruanesg/">LinkedIn</a>
+        <a href="#main">Back to top &uarr;</a>
+      </span>
+    </div>
   </footer>
 </body>
 </html>
